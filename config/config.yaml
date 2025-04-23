@@ -1,0 +1,7 @@
+server:
+  port: "8080"
+elasticsearch:
+  host: "http://192.168.30.226:9200"
+  index: "bittorrent_metadata"
+pagination:
+  page_size: 15

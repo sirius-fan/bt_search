@@ -1,0 +1,98 @@
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+header {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.torrent-card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.torrent-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-color: #007bff;
+}
+
+.torrent-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 123, 255, 0.04);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+}
+
+.torrent-card:hover::after {
+    opacity: 1;
+}
+
+/* 点击效果 */
+.card-clicked {
+    transform: scale(0.98);
+    box-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.1) !important;
+    background-color: rgba(0, 123, 255, 0.05);
+    transition: transform 0.1s ease, box-shadow 0.1s ease !important;
+}
+
+.torrent-name {
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.torrent-card:hover .torrent-name {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.torrent-info {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.torrent-size {
+    font-weight: 500;
+}
+
+.pagination {
+    margin-top: 2rem;
+}
+
+.pagination .page-link {
+    color: #007bff;
+}
+
+.pagination .page-item.active .page-link {
+	color: #ffffff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+#sort-options {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
