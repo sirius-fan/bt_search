@@ -126,7 +126,7 @@ docker-compose up -d
 打开浏览器，访问 http://localhost:8080
 
 
-![Screenshot](https://github.com/sirius-fan/bt_search/blob/master/Screenshot_2025-08-06_01:34:39.png)
+![Screenshot](https://github.com/sirius-fan/bt_search/blob/master/img.png)
 
 ## 配置说明
 
